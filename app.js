@@ -29,11 +29,11 @@ boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (turnO) {
       //playerO
-      box.innerText = "Peehu";
+      box.innerText = "X";
       turnO = false;
     } else {
       //playerX
-      box.innerText = "pADRA";
+      box.innerText = "O";
       turnO = true;
     }
     box.disabled = true;
@@ -88,4 +88,5 @@ const checkWinner = () => {
 };
 
 newGameBtn.addEventListener("click", resetGame);
+
 resetBtn.addEventListener("click", resetGame);
